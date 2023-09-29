@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="font" href="">
+    <title>Wizard Battle Score Keeper</title>
+</head>
+
+<body>
+    <main>
+        <img src="imgs/wizard-battle.png" style="width: 600px; image-rendering: pixelated;">
+        <h2>Wizard Battle Score Keeper</h2>
+        <hr>
+        <h4 class="message" id="message"></h4>
+        <h1><span id="d1">🤍🤍🤍🤍🤍</span> vs <span id="d2">🤍🤍🤍🤍🤍</span></h1>
+        <h3>Use buttons to keep the score. Remember, no destructive spells allowed!</h3>
+        <div class="settings">
+            <div class="select">
+                <label for="house-select-d1">Duelist I: </label>
+                <select name="house" id="house-select-d1">
+                    <option value="0">HOUSE</option>
+                    <option value="1">❤️ Grief Indoors</option>
+                    <option value="2">💛 Rough and Puff</option>
+                    <option value="3">💚 Slit a Rim</option>
+                    <option value="4">💙 Rave in Claw</option>
+                </select>
+            </div>
+            <div class="select">
+                <label for="house-select-d2">Duelist II: </label>
+                <select name="house2" id="house-select-d2">
+                    <option value="0">HOUSE</option>
+                    <option value="1">❤️ Grief Indoors</option>
+                    <option value="2">💛 Rough and Puff</option>
+                    <option value="3">💚 Slit a Rim</option>
+                    <option value="4">💙 Rave in Claw</option>
+                </select>
+            </div>
+            <div class="select">
+                <label for="hearts-select">Playing with: </label>
+                <select name="hearts" id="hearts-select">
+                    <option value="1">🖤</option>
+                    <option value="2">🖤🖤</option>
+                    <option value="3">🖤🖤🖤</option>
+                    <option value="4">🖤🖤🖤🖤</option>
+                    <option value="5">🖤🖤🖤🖤🖤</option>
+                </select>
+            </div>
+        </div>
+        <section>
+            <button id="bd1">💔 Duelist I</button>
+            <button id="bd2">💔 Duelist II</button>
+            <button class="button-reset" id="reset">Reset</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
